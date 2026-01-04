@@ -32,7 +32,7 @@ Key Features:
 
 1. **Clone the Repository**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/Raphoum/llm_genai_project
    cd Project_LLM_GenAi
    ```
 
