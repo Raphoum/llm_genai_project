@@ -18,7 +18,6 @@ load_dotenv()
 EMBEDDING_MODEL = "models/embedding-001"
 LLM_MODEL = "gemini-2.5-flash" 
 PERSIST_DIRECTORY = "chroma_db"
-# Updated path to be relative to project root or data folder
 REGISTRATION_FILE = "data/registrations.json"
 
 # --- Tools ---
@@ -40,12 +39,10 @@ def retrieve_esilv_info(query: str):
 @tool
 def save_registration(name: str, email: str, interest: str):
     """Saves a user's registration details."""
-    # Ensure data directory exists if running tool
     os.makedirs(os.path.dirname(REGISTRATION_FILE), exist_ok=True)
     
     data = {"name": name, "email": email, "interest": interest}
     
-    # Simple JSON append
     existing_data = []
     if os.path.exists(REGISTRATION_FILE):
         try:
