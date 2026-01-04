@@ -5,9 +5,6 @@ import os
 from pathlib import Path
 import sys
 
-# Add project root to path to allow imports from sibling directories if needed, 
-# though running from root usually works. 
-# Explicitly adding it ensures stability.
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from agents.graph import graph
@@ -50,12 +47,10 @@ with tab1:
 
     # Chat Input
     if prompt := st.chat_input("Ask a question about ESILV..."):
-        # Add user message to state
         st.session_state.messages.append(HumanMessage(content=prompt))
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        # Process with Agent
         config = {"configurable": {"thread_id": st.session_state.thread_id}}
         
         with st.chat_message("assistant"):
@@ -63,7 +58,6 @@ with tab1:
             full_response = ""
             
             try:
-                # Use stream_mode="values" to get the latest state of messages
                 events = graph.stream(
                     {"messages": [("user", prompt)]},
                     config,
