@@ -1,6 +1,6 @@
 # ESILV Smart Assistant
 
-## 🎓 Project Overview
+## Project Overview
 An intelligent Agentic Chatbot designed for ESILV engineering school. This system allows users to ask questions about programs and admissions (RAG) and register for contact via a conversational interface.
 
 Key Features:
@@ -10,7 +10,7 @@ Key Features:
 - **Admin Dashboard**: View registrations and manage knowledge base.
 - **Modular Architecture**: Organized for scalability using LangGraph and LangChain.
 
-## 📂 Project Structure
+## Project Structure
 ```
 ├── agents/             # Agent logic and graph definition
 │   └── graph.py        # LangGraph definition with Memory and Tools
@@ -28,7 +28,7 @@ Key Features:
 └── README.md           # This file
 ```
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 1. **Clone the Repository**
    ```bash
@@ -56,7 +56,7 @@ Key Features:
    GOOGLE_API_KEY=your_gemini_api_key
    ```
 
-## 🛠️ Usage
+## Usage
 
 ### 1. Ingest Data
 Process the initial PDFs in `data/pdfs`:
@@ -76,13 +76,13 @@ Launch the full UI with Chat, Upload, and Admin tabs:
 streamlit run ui/app.py
 ```
 
-## 🤖 Features Guide
+## Features Guide
 
 - **Chat Tab**: Ask "What programs do you have?" or "I want to apply".
 - **Upload Knowledge**: Go to the "Upload" tab to add new PDF brochures.
 - **Admin Dashboard**: Go to "Admin" to view the list of registered students.
 
-## 🏗️ Tech Stack
+## Tech Stack
 - **LLM**: Google Gemini 2.0 Flash
 - **Orchestration**: LangGraph, LangChain
 - **Vector DB**: ChromaDB
