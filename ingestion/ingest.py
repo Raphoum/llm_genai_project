@@ -11,7 +11,6 @@ from langchain_chroma import Chroma
 load_dotenv()
 
 # Configuration
-# Assuming script is run from project root, so paths remain relative to root
 DATA_DIR = Path("data/pdfs")
 PERSIST_DIRECTORY = Path("chroma_db")
 EMBEDDING_MODEL = "models/embedding-001"
