@@ -1,0 +1,22 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "interest": "Data Science"
+  },
+  {
+    "name": "John Doe",
+    "email": "johndoe@gmail.com",
+    "interest": "Data Science"
+  },
+  {
+    "name": "Membre Henlle",
+    "email": "mbh@gmail.com",
+    "interest": "Finance"
+  },
+  {
+    "name": "Dorian Morci",
+    "email": "drmc@gmail.com",
+    "interest": "IoT"
+  }
+]
