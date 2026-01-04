@@ -25,10 +25,10 @@ def get_content_text(content):
 # Page Config
 st.set_page_config(page_title="ESILV Smart Assistant", page_icon="🎓", layout="wide")
 
-st.title("🎓 ESILV Smart Assistant")
+st.title("ESILV Smart Assistant")
 
 # Tabs
-tab1, tab2, tab3 = st.tabs(["💬 Chat", "📤 Upload Knowledge", "🔐 Admin"])
+tab1, tab2, tab3 = st.tabs(["Chat", "Upload Knowledge", "Admin"])
 
 # --- TAB 1: Chat ---
 with tab1:
